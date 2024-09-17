@@ -9,6 +9,7 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config({ path: '../.env' });
 const app = (0, express_1.default)();
+// port 5000 taken by ControlCe (Apple)
 const port = 5001;
 // JSON parsing middleware
 app.use(express_1.default.json());
