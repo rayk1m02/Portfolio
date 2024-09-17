@@ -2,12 +2,12 @@
   "compilerOptions": {
     "target": "ES6",                    // Target ES6 or higher
     "module": "commonjs",                // Use CommonJS modules
-    "outDir": "dist",                    // Output to 'dist' folder
-    "rootDir": ".",                    // Only compile from the 'src' directory
+    "outDir": "./dist",                    // Output to 'dist' folder
+    "rootDir": "./src",                    // Only compile from the 'src' directory
     "strict": true,                      // Enable strict type checking
     "esModuleInterop": true,             // Enable compatibility with CommonJS
     "skipLibCheck": true                 // Skip type checking for declaration files
   },
-  "include": ["*.ts"],               // Only include TypeScript files in 'src' folder
+  "include": ["src/**/*"],               // Include all TypeScript files in 'src' folder
   "exclude": ["node_modules"]  
 }
