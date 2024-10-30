@@ -2,22 +2,24 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import introRoutes from './routes/intro';
 
 dotenv.config({path: '../.env'});
 
 const app = express();
-// port 5000 taken by ControlCe (Apple)
-const port = 5001;
+const port = 5001; // port 5000 taken by ControlCe (Apple)
+
 // JSON parsing middleware
 app.use(express.json());
-
-// Define router handler for HTTP GET requests to root URL ('/')
-app.get('/', (req, res) => {
-  res.send('Backend is running');
-});
+app.use('/api/intro', introRoutes);
 
 const MONGO_URI = process.env.MONGO_URI 
 if (!MONGO_URI) { throw new Error('MONGO_URI environment variable not set'); }
+
+// Define router handler for HTTP GET requests to root URL ('/')
+// app.get('/', (req, res) => {
+//   res.send('Backend is running');
+// });
 
 // establish connection to MongoDB database
 mongoose.connect(MONGO_URI)
