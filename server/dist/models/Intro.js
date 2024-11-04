@@ -23,6 +23,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+// Schema definition
 const mongoose_1 = __importStar(require("mongoose"));
 // Schema from the intro data
 const IntroSchema = new mongoose_1.Schema({
@@ -31,7 +32,7 @@ const IntroSchema = new mongoose_1.Schema({
     phone: { type: String, required: true },
     linkedIn: { type: String, required: true },
     github: { type: String, required: true },
-}, { collection: 'Intro' }); // explicitly state Colletion name 'Intro'
+}, { collection: 'intros' }); // explicitly state Colletion name 'Intro'
 // Create a model based on the schema
 const Intro = mongoose_1.default.model('Intro', IntroSchema);
 exports.default = Intro;

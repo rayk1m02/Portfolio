@@ -1,23 +1,26 @@
-// Request handling
 import express from 'express';
 import Intro from '../models/Intro';
 
 const router = express.Router();
 
-// Route to get intro data
+// Route will be accessed at /api/intro
 router.get('/intro', async (req, res) => {
+
   try {
-    // Attempt to find intro data in the database
     const intro = await Intro.findOne();
+    
     if (intro) { 
-      console.log('Retrieved intro data from database');
+      console.log('Found intro data. Sending to client', intro);
       res.json(intro); 
-    } 
-    else { res.status(404).json({ message: 'Intro data not found' });}
+    } else { 
+      res.status(404);
+    }
+
   } catch (error) { 
-    res.status(500).json({ message: 'Internal server error' }); 
+    console.error('Database error:', error);
+    res.status(500); 
   }
+
 });
 
 export default router;
-

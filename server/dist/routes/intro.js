@@ -15,20 +15,23 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const Intro_1 = __importDefault(require("../models/Intro"));
 const router = express_1.default.Router();
-// Route to get intro data
+// Route will be accessed at /api/intro
 router.get('/intro', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        // Attempt to find intro data in the database
+        console.log('Attempting to find intro data...');
         const intro = yield Intro_1.default.findOne();
+        console.log('Found intro data:', intro);
         if (intro) {
-            console.log('Retrieved intro data from database');
+            console.log('Sending intro data to client');
             res.json(intro);
         }
         else {
+            console.log('No intro data found');
             res.status(404).json({ message: 'Intro data not found' });
         }
     }
     catch (error) {
+        console.error('Database error:', error);
         res.status(500).json({ message: 'Internal server error' });
     }
 }));

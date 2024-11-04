@@ -8,6 +8,8 @@ const IntroDisplay: React.FC = () => {
     const fetchData = async () => {
       try {
         console.log('Fetching intro data...');
+        // axios attempts to fetch data from express server 
+        // using HTTP GET request to localhost:5001/api/into
         const data = await getIntroData();
         console.log('Intro data fetched:', data);
         setIntroData(data);
@@ -15,7 +17,9 @@ const IntroDisplay: React.FC = () => {
         console.error('Failed to fetch intro data:', error);
       }
     };
+
     fetchData();
+
   }, []);
 
   if (!introData) {
@@ -31,6 +35,7 @@ const IntroDisplay: React.FC = () => {
       <p>GitHub: <a href={`https://${introData.github}`} target="_blank" rel="noopener noreferrer">{introData.github}</a></p>
     </div>
   );
+  
 };
 
 export default IntroDisplay;

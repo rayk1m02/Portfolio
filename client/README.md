@@ -44,3 +44,12 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+Personal Documentation
+
+Data flow:
+1. MongoDB -> Stores intro data in collection
+2. Express server -> Retrieves data from MongoDB
+3. Axios -> Fetches data from the server
+4. Reach -> Displays the data in browser
