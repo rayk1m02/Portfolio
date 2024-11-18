@@ -7,6 +7,7 @@ This is my portfolio webpage. A full-stack project built with React (TypeScript)
 ### Frontend
   - React with TypeScript 
   - Axios for API calls
+  - Tailwind CSS
   
 ### Backend
   - Express.js
