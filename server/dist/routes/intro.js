@@ -18,21 +18,18 @@ const router = express_1.default.Router();
 // Route will be accessed at /api/intro
 router.get('/intro', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        console.log('Attempting to find intro data...');
         const intro = yield Intro_1.default.findOne();
-        console.log('Found intro data:', intro);
         if (intro) {
-            console.log('Sending intro data to client');
+            console.log('Found intro data. Sending to client', intro);
             res.json(intro);
         }
         else {
-            console.log('No intro data found');
-            res.status(404).json({ message: 'Intro data not found' });
+            res.status(404);
         }
     }
     catch (error) {
         console.error('Database error:', error);
-        res.status(500).json({ message: 'Internal server error' });
+        res.status(500);
     }
 }));
 exports.default = router;
