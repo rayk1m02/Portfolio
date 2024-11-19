@@ -15,13 +15,12 @@ module.exports = {
           200: '#bae6fd',
           300: '#7dd3fc',
           400: '#38bdf8',
-          500: '#0ea5e9',  // Main brand color
+          500: '#0ea5e9',  // Main theme color
           600: '#0284c7',
           700: '#0369a1',
           800: '#075985',
           900: '#0c4a6e',
         },
-        // Secondary colors
         secondary: {
           light: '#f8fafc',  // Light background
           DEFAULT: '#1e293b', // Text color
@@ -66,6 +65,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),  // You'll need to install this package
+    require('@tailwindcss/typography'),  
   ],
 }

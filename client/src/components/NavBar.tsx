@@ -5,9 +5,7 @@ const NavBar: React.FC = () => {
   const location = useLocation();
 
   const getActiveClass = (path: string) => {
-    return location.pathname === path 
-      ? "text-accent-blue" 
-      : "text-secondary-light hover:text-primary-300";
+    return location.pathname === path ? "text-accent-blue" : "text-secondary-light hover:text-primary-300";
   };
 
   return (
