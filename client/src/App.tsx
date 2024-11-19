@@ -1,32 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-
-import IntroDisplay from './components/IntroDisplay';
-
+import NavBar from './components/NavBar';
+import Home from './pages/Home';
+import Experience from './pages/Experience';
+import Projects from './pages/Projects';
+import Blog from './pages/Blog';
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hi, my name is Raymond Kim.</p>
-        <p>This is my first React WebApp</p>
-        <p>Welcome to my portfolio!</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <main>
-        <IntroDisplay />
-      </main>
+      <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
     </div>
+    </Router>
   );
 }
 
 export default App;
-

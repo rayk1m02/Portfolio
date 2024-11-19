@@ -3,7 +3,6 @@ import { getIntroData } from '../api/intro';
 
 const IntroDisplay: React.FC = () => {
   const [introData, setIntroData] = useState<any>(null);
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -17,22 +16,65 @@ const IntroDisplay: React.FC = () => {
         console.error('Failed to fetch intro data:', error);
       }
     };
-
     fetchData();
-
   }, []);
 
   if (!introData) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex justify-center items-center min-h-[200px]">
+        <div className="text-gray-600 text-lg">Loading...</div>
+      </div>
+    );
   }
 
   return (
-    <div>
-      <h1>{introData.name}</h1>
-      <p>Email: {introData.email}</p>
-      <p>Phone: {introData.phone}</p>
-      <p>LinkedIn: <a href={`https://${introData.linkedIn}`} target="_blank" rel="noopener noreferrer">{introData.linkedIn}</a></p>
-      <p>GitHub: <a href={`https://${introData.github}`} target="_blank" rel="noopener noreferrer">{introData.github}</a></p>
+    <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-8">
+      <h1 className="text-3xl font-bold text-gray-800 mb-6">
+        {introData.name}
+      </h1>
+      
+      <div className="space-y-4">
+        <div className="flex items-center text-gray-700">
+          <span className="mr-2">✉️</span>
+          <span className="hover:text-blue-600 transition-colors">
+            {introData.email}
+          </span>
+        </div>
+
+        <div className="flex items-center text-gray-700">
+          <span className="mr-2">📞</span>
+          <span>{introData.phone}</span>
+        </div>
+
+        <div className="flex items-center text-gray-700">
+          <span className="mr-2">🧳</span>
+          <a 
+            href={`https://${introData.linkedIn}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 transition-colors"
+          >
+            {introData.linkedIn}
+          </a>
+        </div>
+
+        <div className="flex items-center text-gray-700">
+          <span className="mr-2">🤖</span>
+          <a 
+            href={`https://${introData.github}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 transition-colors"
+          >
+            {introData.github}
+          </a>
+        </div>
+
+        <div className="flex items-center text-gray-700">
+          <span className="mr-2">📄</span>
+          <span className="font-medium">Resume</span>
+        </div>
+      </div>
     </div>
   );
   
