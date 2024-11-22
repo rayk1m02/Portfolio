@@ -9,21 +9,27 @@ const Home: React.FC = () => {
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 space-y-8">
           {/* Left column */}
           <div>
-            <h1 className="text-4xl font-heading font-bold mb-6">Hi, I'm Ray.</h1>
-            <p className="text-xl font-sans text-primary-200 mb-4">I'm a Full Stack Developer based in Texas</p>
-            <p className="text-xl font-sans text-primary-200 mb-20">Thanks for visiting!</p>
-          <IntroDisplay />
+            <h1 className="text-5xl font-heading font-bold mb-8">Hi, I'm Ray</h1>
+            <p className="text-2xl font-sans text-primary-200 mb-1">I'm a Full Stack Developer </p>
+            <p className="text-2xl font-sans text-primary-200 mb-20">based in Texas.</p>
+            <IntroDisplay />
           </div>
           {/* Right column */}
-          <div className="flex justify-center items-center">
-            {/* Placehodler for profile image */}
-            <div className="w-60 h-60 rounded-full bg-gray-300">
-              {/* Replace with an <img> tag later */}
-            </div>
+          <div className="flex flex-col justify-center items-center">
+            <img 
+              src={require('../img/pp.JPG')} 
+              alt="Profile Picture" 
+              className="w-60 h-60 rounded-full object-cover"
+            />
+            <p className="text-2xl font-sans text-primary-300 mt-8">Welcome to my portfolio!</p>
           </div>
         </div>
       </header>
       <main className="container mx-auto px-4 py-8">
+        {/* 
+        Background, Skills
+        Hobbies
+         */}
       </main>
     </div>
   );
