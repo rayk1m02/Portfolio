@@ -25,14 +25,64 @@ const Home: React.FC = () => {
           </div>
         </div>
       </header>
-      <main className="container mx-auto px-4 py-8">
-        {/* 
-        Background, Skills
-        Hobbies
-         */}
+      {/* Scrolling down */}
+      <main className="container mx-auto px-4 py-8 mt-5">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+          {/* Left column */}
+          <div className="space-y-8">
+            <h2 className="text-3xl font-heading font-bold">Background</h2>
+            <p className="text-xl font-sans text-primary-500">My background.</p>
+            <h2 className="text-3xl font-heading font-bold">Interests</h2>
+            <p className="text-xl font-sans text-primary-500">Full-Stack, Front End, UX/UI.</p>
+          </div>
+          {/* Right column */}
+          <div className="flex flex-col">
+            <h2 className="text-3xl font-heading font-bold pb-5">💻 Languages</h2>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="flex flex-col space-y-4">
+                <div className="font-mono text-primary-600">
+                  <div>Java</div>
+                  <div>Python</div>
+                  <div>Swift</div>
+                  <div>JavaScript</div>
+                  <div>TypeScript</div>
+                </div>
+              </div>
+              <div className="flex flex-col space-y-4">
+                <div className="font-mono text-primary-600">
+                  <div>HTML</div>
+                  <div>CSS</div>
+                  <div>SQL</div>
+                  <div>C</div>
+                  <div>Delphi</div>
+                </div>
+              </div>
+            </div>
+            <h2 className="text-3xl font-heading font-bold pb-5 mt-8">⚙️ Tools</h2>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="flex flex-col space-y-4">
+                <div className="font-mono text-primary-600">
+                  <div>Git</div>
+                  <div>Firebase</div>
+                  <div>React</div>
+                  <div>Node.js</div>
+                </div>
+              </div>
+              <div className="flex flex-col space-y-4">
+                <div className="font-mono text-primary-600">
+                  <div>AWS</div>
+                  <div>MongoDB</div>
+                  <div>Xcode</div>
+                  <div>VS Code</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
 };
 
 export default Home;
+
