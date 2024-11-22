@@ -28,21 +28,14 @@ const IntroDisplay: React.FC = () => {
   }
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-8">      
+    <div className="max-w-xs mx-auto p-6 bg-opacity-80 bg-white rounded-lg shadow-lg mt-8 text-sm">      
       <div className="space-y-4">
-
         <div className="flex items-center text-gray-700">
-          <span className="mr-2">✉️</span>
+          <span className="mr-2">📧</span>
           <span className="hover:text-blue-600 transition-colors">
             {introData.email}
           </span>
         </div>
-
-        <div className="flex items-center text-gray-700">
-          <span className="mr-2">📞</span>
-          <span>{introData.phone}</span>
-        </div>
-
         <div className="flex items-center text-gray-700">
           <span className="mr-2">🧳</span>
           <a 
@@ -54,7 +47,6 @@ const IntroDisplay: React.FC = () => {
             {introData.linkedIn}
           </a>
         </div>
-
         <div className="flex items-center text-gray-700">
           <span className="mr-2">🤖</span>
           <a 
@@ -66,12 +58,10 @@ const IntroDisplay: React.FC = () => {
             {introData.github}
           </a>
         </div>
-
         <div className="flex items-center text-gray-700">
           <span className="mr-2">📄</span>
-          <span className="font-medium">Resume</span>
+          <a href={''} target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 transition-colors">Resume ↗️</a>
         </div>
-        
       </div>
     </div>
   );

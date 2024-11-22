@@ -23,11 +23,7 @@ const Home: React.FC = () => {
         </div>
       </header>
       <main className="container mx-auto px-4 py-8">
-        { /**  
-         * Need to add profile image to right
-         * Need to move welcome sentence to left position
-         * Need to move IntroDisplay to bottom left with smaller size
-        */}
+
       </main>
     </div>
   );
