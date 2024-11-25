@@ -1,6 +1,5 @@
 import React from 'react';
 import IntroDisplay from '../components/IntroDisplay';
-import Test from '../pages/Test';
 
 const Home: React.FC = () => {
   return (
