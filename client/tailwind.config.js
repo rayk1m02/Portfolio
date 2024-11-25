@@ -27,9 +27,9 @@ module.exports = {
           dark: '#0f172a',    // Dark background
         },
         accent: {
-          blue: '#60a5fa',    // Accent blue
-          indigo: '#818cf8',  // Accent indigo
-          cyan: '#22d3ee',    // Accent cyan
+          blue: '#60a5fa',    
+          indigo: '#818cf8',  
+          cyan: '#22d3ee',    
         }
       },
       typography: {

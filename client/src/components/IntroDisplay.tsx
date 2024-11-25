@@ -28,15 +28,15 @@ const IntroDisplay: React.FC = () => {
   }
 
   return (
-    <div className="max-w-[335px] mx-auto p-6 bg-opacity-50 bg-gray-300 rounded-lg mt-8 text-sm">      
+    <div className="max-w-[335px] mx-auto p-6 bg-opacity-50 bg-gray-300 rounded-lg text-sm">      
       <div className="space-y-4">
-        <div className="flex items-center text-gray-800 font-bold">
+        <div className="flex items-center text-gray-800 font-semibold">
           <span className="mr-2">📧</span>
-          <span className="hover:text-blue-600 transition-colors">
+          <span>
             {introData.email}
           </span>
         </div>
-        <div className="flex items-center font-bold">
+        <div className="flex items-center font-semibold">
           <span className="mr-2">🧳</span>
           <a 
             href={`https://${introData.linkedIn}`}
@@ -47,7 +47,7 @@ const IntroDisplay: React.FC = () => {
             {introData.linkedIn}
           </a>
         </div>
-        <div className="flex items-center font-bold">
+        <div className="flex items-center font-semibold">
           <span className="mr-2">🤖</span>
           <a 
             href={`https://${introData.github}`}
@@ -58,9 +58,9 @@ const IntroDisplay: React.FC = () => {
             {introData.github}
           </a>
         </div>
-        <div className="flex items-center text-gray-800 font-bold">
+        <div className="flex items-center text-gray-800 font-semibold">
           <span className="mr-2">📄</span>
-          <a href={''} target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 transition-colors">Resume ↗️</a>
+          <span className="hover:text-blue-800 transition-colors cursor-pointer">Resume ↗️</span>
         </div>
       </div>
     </div>

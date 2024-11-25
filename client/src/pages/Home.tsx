@@ -4,23 +4,23 @@ import IntroDisplay from '../components/IntroDisplay';
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen pt-16 bg-secondary-light">
-      <header className="h-[80vh] py-20 bg-gradient-to-b from-secondary-dark to-primary-800 text-secondary-light">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 space-y-8">
+      <header className="h-[80vh] pt-20 pb-10 bg-gradient-to-b from-secondary-dark to-primary-800 text-secondary-light">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
           {/* Left column */}
           <div>
-            <h1 className="text-5xl font-heading font-bold mb-8">Hi, I'm Ray</h1>
-            <p className="text-2xl font-sans text-primary-200 mb-1">I'm a Full Stack Developer </p>
-            <p className="text-2xl font-sans text-primary-200 mb-20">based in Texas.</p>
+            <h1 className="text-5xl font-heading font-bold mb-10">Hi, I'm Ray</h1>
+            <p className="text-2xl font-sans text-primary-200 mb-1 font-semibold">I'm a Full Stack Developer </p>
+            <p className="text-2xl font-sans text-primary-200 mb-20 font-semibold">based in Texas.</p>
             <IntroDisplay />
           </div>
           {/* Right column */}
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center space-y-10">
             <img 
               src={require('../img/pp.JPG')} 
               alt="Profile Picture" 
               className="w-60 h-60 rounded-full object-cover"
             />
-            <p className="text-2xl font-sans text-primary-300 mt-8">Welcome to my portfolio!</p>
+            <p className="text-2xl font-sans text-primary-300">Welcome to my portfolio!</p>
           </div>
         </div>
       </header>
