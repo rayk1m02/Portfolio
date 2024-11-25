@@ -22,19 +22,17 @@ const IntroDisplay: React.FC = () => {
   if (!introData) {
     return (
       <div className="flex justify-center items-center min-h-[200px]">
-        <div className="text-gray-600 text-lg">Loading...</div>
+        <div className="text-accent-blue text-xs text-center">Loading...</div>
       </div>
     );
   }
 
   return (
-    <div className="max-w-[335px] mx-auto p-6 bg-opacity-50 bg-gray-300 rounded-lg text-sm">      
+    <div className="max-w-[335px] mx-auto p-5 rounded-lg text-xs text-center">      
       <div className="space-y-4">
-        <div className="flex items-center text-gray-800 font-semibold">
+        <div className="flex items-center text-accent-blue font-semibold">
           <span className="mr-2">📧</span>
-          <span>
-            {introData.email}
-          </span>
+          <span className="text-primary-200">{introData.email}</span>
         </div>
         <div className="flex items-center font-semibold">
           <span className="mr-2">🧳</span>
@@ -42,7 +40,7 @@ const IntroDisplay: React.FC = () => {
             href={`https://${introData.linkedIn}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 transition-colors"
+            className="text-primary-200 hover:text-primary-50 transition-colors duration-200"
           >
             {introData.linkedIn}
           </a>
@@ -53,14 +51,14 @@ const IntroDisplay: React.FC = () => {
             href={`https://${introData.github}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 transition-colors"
+            className="text-primary-200 hover:text-primary-50 transition-colors duration-200"
           >
             {introData.github}
           </a>
         </div>
-        <div className="flex items-center text-gray-800 font-semibold">
+        <div className="flex items-center text-accent-blue font-semibold">
           <span className="mr-2">📄</span>
-          <span className="hover:text-blue-800 transition-colors cursor-pointer">Resume ↗️</span>
+          <span className="text-primary-200 hover:text-primary-50 transition-colors cursor-pointer">Resume ↗</span>
         </div>
       </div>
     </div>
@@ -69,3 +67,5 @@ const IntroDisplay: React.FC = () => {
 };
 
 export default IntroDisplay;
+
+
