@@ -3,7 +3,7 @@ import IntroDisplay from './IntroDisplay';
 
 const Header = () => {
   return (
-    <header className="h-[80vh] bg-gradient-to-b from-secondary-dark to-primary-800 text-secondary-light">
+    <header className="h-[79vh] bg-gradient-to-b from-secondary-dark to-primary-800 text-secondary-light">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-2 md:pt-20">
         {/* Left column */}
         <div className="mt-[100px]">

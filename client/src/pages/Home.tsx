@@ -11,24 +11,22 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen pt-16 bg-secondary-light">
       <Header />
-      {/* Scrolling down */}
       <div className="border-b border-dashed border-primary-400"></div>
-      {/* Scrolling down */}
-      <main className="w-full px-20 pt-12 bg-gradient-to-b from-primary-800 to-primary-500">
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+      <main className="w-full px-20 bg-gradient-to-b from-primary-800 to-primary-500">
+        <section id="MainA" className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-12 p-12">
           {/* Left column */}
-          <div className="space-y-5">
-            <h2 className="text-2xl font-heading font-bold">Background</h2>
-            <p className="text-lg font-sans text-primary-500">I was born in Texas and raised in Pakistan and Taiwan. I graduated in May 2024 from Wheaton College in Illinois.</p>
-            <h2 className="text-2xl font-heading font-bold pt-10">Interests</h2>
-            <p className="text-lg font-sans text-primary-500">My main interests are in front-end development and product design. Currently I am learning full-stack and have interests in the cloud computing space as well.</p>
+          <div className="p-6 bg-white rounded-lg shadow-lg">
+            <h2 className="text-3xl font-heading font-bold mb-5">Background</h2>
+            <p className="text-lg font-sans font-semibold text-primary-700 leading-relaxed mb-20">I was born in Texas and raised in Pakistan and Taiwan. I graduated in May 2024 from Wheaton College in Illinois.</p>
+            <h2 className="text-3xl font-heading font-bold mb-5 mt-10">Interests</h2>
+            <p className="text-lg font-sans font-semibold text-primary-700 leading-relaxed">My main interests are in front-end development and product design. Currently I am learning full-stack and have interests in the cloud computing space as well.</p>
           </div>
           {/* Right column */}
-          <div className="flex flex-col">
-            <h2 className="text-2xl font-heading font-bold pb-7">💻 Languages</h2>
-            <div className="grid grid-cols-2 gap-2">
+          <div className="flex flex-col p-6 bg-white rounded-lg shadow-lg">
+            <h2 className="text-3xl font-heading font-bold pb-7">💻 Languages</h2>
+            <div className="grid grid-cols-2 gap-1">
               <div className="flex flex-col space-y-4">
-                <div className="font-mono text-primary-600">
+                <div className="font-mono font-bold text-primary-600">
                   <div>Java</div>
                   <div>Python</div>
                   <div>Swift</div>
@@ -37,7 +35,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col space-y-4">
-                <div className="font-mono text-primary-600">
+                <div className="font-mono font-bold text-primary-600">
                   <div>HTML</div>
                   <div>CSS</div>
                   <div>SQL</div>
@@ -46,10 +44,10 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </div>
-            <h2 className="text-2xl font-heading font-bold pb-7 mt-10">⚙️ Tools</h2>
-            <div className="grid grid-cols-2 gap-2">
+            <h2 className="text-3xl font-heading font-bold pb-7 mt-10">⚙️ Tools</h2>
+            <div className="grid grid-cols-2 gap-1">
               <div className="flex flex-col space-y-4">
-                <div className="font-mono text-primary-600">
+                <div className="font-mono font-bold text-primary-600">
                   <div>Git</div>
                   <div>Firebase</div>
                   <div>React</div>
@@ -57,7 +55,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col space-y-4">
-                <div className="font-mono text-primary-600">
+                <div className="font-mono font-bold text-primary-600">
                   <div>AWS</div>
                   <div>MongoDB</div>
                   <div>Xcode</div>
@@ -68,7 +66,7 @@ const Home: React.FC = () => {
           </div>
         </section>
         {/* Scrolling down */}
-        <div className="border-b border-dashed border-primary-400"></div>
+        <div id="Dashline2" className="w-full border-b border-dashed border-primary-400"></div>
         {/* Scrolling down */}
         <section>
           <p>My Hobbies</p>
@@ -99,10 +97,11 @@ const Home: React.FC = () => {
         <p>Footer</p>
         <p>Footer</p>
         <p>Footer</p>
-        <p>Footer</p>
       </footer>
     </div>
   );
 };
 
 export default Home;
+
+
