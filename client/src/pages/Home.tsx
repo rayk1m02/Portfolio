@@ -16,9 +16,9 @@ const Home: React.FC = () => {
         <section id="MainA" className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-12 p-12">
           {/* Left column */}
           <div className="p-6 bg-white rounded-lg shadow-lg">
-            <h2 className="text-3xl font-heading font-bold mb-5">Background</h2>
-            <p className="text-lg font-sans font-semibold text-primary-700 leading-relaxed mb-20">I was born in Texas and raised in Pakistan and Taiwan. I graduated in May 2024 from Wheaton College in Illinois.</p>
-            <h2 className="text-3xl font-heading font-bold mb-5 mt-10">Interests</h2>
+            <h2 className="text-3xl font-heading font-bold mb-5">🌄 Background</h2>
+            <p className="text-lg font-sans font-semibold text-primary-700 leading-relaxed mb-20">I'm from Texas but grew up in Pakistan and Taiwan. I graduated in May 2024 studying Computer Science and Economics from Wheaton College in Illinois.</p>
+            <h2 className="text-3xl font-heading font-bold mb-5">🤓 Interests</h2>
             <p className="text-lg font-sans font-semibold text-primary-700 leading-relaxed">My main interests are in front-end development and product design. Currently I am learning full-stack and have interests in the cloud computing space as well.</p>
           </div>
           {/* Right column */}
