@@ -1,12 +1,6 @@
 import React from 'react';
 import Header from '../components/Home/Header';
 
-/**
- * 
- * Eventually I want to have each section (header, main.A, main.B, and footer) into a separate component/file, so this file is so more readable.
- * I also want to implement a ripple effect animation when user scrolls into the top or bottom of page.
- */
-
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen pt-16 bg-secondary-light">

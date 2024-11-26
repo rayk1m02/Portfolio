@@ -12,29 +12,23 @@ const PdfViewer = () => {
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#333',
-        height: '100vh',
-        width: '100vw',
-        margin: 0,
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
+        height: '100vh'
       }}
     >
-      <iframe
+      <img
         src="/CV.JPG"
-        title="CV"
+        alt="CV"
         style={{
-          width: '80%',
+          position: 'absolute',
+          top: '52%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: '33%',
           height: '80vh',
           maxHeight: '90%',
           maxWidth: '90%',
-          border: 'none',
-          display: 'block',
-          margin: 'auto',
         }}
-      ></iframe>
+      />
     </div>
   );
 };
