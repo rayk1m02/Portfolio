@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getIntroData } from '../../api/intro';
+import { Link } from 'react-router-dom';
 
 const IntroDisplay: React.FC = () => {
   const [introData, setIntroData] = useState<any>(null);
@@ -58,7 +59,13 @@ const IntroDisplay: React.FC = () => {
         </div>
         <div className="flex items-center text-accent-blue font-semibold">
           <span className="mr-2">📄</span>
-          <span className="text-primary-200 hover:text-primary-50 transition-colors cursor-pointer">Resume ↗</span>
+          <Link 
+            to="/cv" 
+            target="_blank"
+            className="text-primary-200 hover:text-primary-50 transition-colors"
+          >
+            Resume ↗
+          </Link>
         </div>
       </div>
     </div>

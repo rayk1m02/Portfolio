@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
+import PdfViewer from './components/Home/PdfViewer';
 function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/cv" element={<PdfViewer />} />
         </Routes>
     </div>
     </Router>
