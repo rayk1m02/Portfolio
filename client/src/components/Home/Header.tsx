@@ -15,7 +15,7 @@ const Header = () => {
         {/* Right column */}
         <div className="flex flex-row justify-center items-center pl-20 pt-8">
           <img 
-            src={require('../../img/pp.JPG')} 
+            src='/img/pp.JPG'
             alt="Profile Picture" 
             className="w-[250px] h-[250px] rounded-full object-cover"
           />
