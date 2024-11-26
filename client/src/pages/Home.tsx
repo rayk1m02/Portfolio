@@ -1,30 +1,16 @@
 import React from 'react';
-import IntroDisplay from '../components/IntroDisplay';
+import Header from '../components/Home/Header';
+
+/**
+ * 
+ * Eventually I want to have each section (header, main.A, main.B, and footer) into a separate component/file, so this file is so more readable.
+ * I also want to implement a ripple effect animation when user scrolls into the top or bottom of page.
+ */
 
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen pt-16 bg-secondary-light">
-      <header className="h-[80vh] bg-gradient-to-b from-secondary-dark to-primary-800 text-secondary-light">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-2 md:pt-20">
-          {/* Left column */}
-          <div className="mt-[100px]">
-            <h1 className="text-5xl font-heading font-bold mb-12 pt-2">Hi, I'm Ray</h1>
-            <p className="text-2xl font-sans text-primary-200 mb-1 font-semibold">I'm a Full Stack Developer </p>
-            <p className="text-2xl font-sans text-primary-200 mb-20 font-semibold">based in Texas.</p>
-          </div>
-          {/* Right column */}
-          <div className="flex flex-row justify-center items-center pl-20 pt-8">
-            <img 
-              src={require('../img/pp.JPG')} 
-              alt="Profile Picture" 
-              className="w-[250px] h-[250px] rounded-full object-cover"
-            />
-            <div className="ml-5">
-              <IntroDisplay />
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
       {/* Scrolling down */}
       <div className="border-b border-dashed border-primary-400"></div>
       {/* Scrolling down */}
@@ -81,7 +67,9 @@ const Home: React.FC = () => {
             </div>
           </div>
         </section>
-        {/* ADD A LINE OR SOMETHING */}
+        {/* Scrolling down */}
+        <div className="border-b border-dashed border-primary-400"></div>
+        {/* Scrolling down */}
         <section>
           <p>My Hobbies</p>
           <p>My Hobbies</p>
@@ -95,7 +83,9 @@ const Home: React.FC = () => {
           <p>My Hobbies</p>
         </section>
       </main>
-      {/* ADD A LINE OR SOMETHING */}
+      {/* Scrolling down */}
+      <div className="border-b border-dashed border-primary-400"></div>
+      {/* Scrolling down */}
       <footer className="w-full px-20 pt-10 bg-gradient-to-b from-primary-500 to-secondary-dark">
         <p>Footer</p>
         <p>Footer</p>

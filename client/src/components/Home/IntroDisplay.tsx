@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getIntroData } from '../api/intro';
+import { getIntroData } from '../../api/intro';
 
 const IntroDisplay: React.FC = () => {
   const [introData, setIntroData] = useState<any>(null);
