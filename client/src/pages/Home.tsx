@@ -66,7 +66,7 @@ const Home: React.FC = () => {
           </div>
         </section>
         {/* Scrolling down */}
-        <div id="Dashline2" className="w-full border-b border-dashed border-primary-400"></div>
+        <div id="Dashline2Test" className="w-full border-b border-dashed border-primary-400"></div>
         {/* Scrolling down */}
         <section>
           <p>My Hobbies</p>
