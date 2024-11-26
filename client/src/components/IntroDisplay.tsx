@@ -28,7 +28,7 @@ const IntroDisplay: React.FC = () => {
   }
 
   return (
-    <div className="max-w-[335px] mx-auto p-5 rounded-lg text-xs text-center">      
+    <div className="max-w-[335px] mx-auto p-5 rounded-lg text-sm text-center">      
       <div className="space-y-4">
         <div className="flex items-center text-accent-blue font-semibold">
           <span className="mr-2">📧</span>
@@ -37,23 +37,23 @@ const IntroDisplay: React.FC = () => {
         <div className="flex items-center font-semibold">
           <span className="mr-2">🧳</span>
           <a 
-            href={`https://${introData.linkedIn}`}
+            href={introData.linkedIn}
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary-200 hover:text-primary-50 transition-colors duration-200"
           >
-            {introData.linkedIn}
+            LinkedIn ↗
           </a>
         </div>
         <div className="flex items-center font-semibold">
           <span className="mr-2">🤖</span>
           <a 
-            href={`https://${introData.github}`}
+            href={introData.github}
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary-200 hover:text-primary-50 transition-colors duration-200"
           >
-            {introData.github}
+            GitHub ↗
           </a>
         </div>
         <div className="flex items-center text-accent-blue font-semibold">
