@@ -8,9 +8,9 @@ const Home: React.FC = () => {
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-2 md:pt-20">
           {/* Left column */}
           <div className="mt-[100px]">
-            <h1 className="text-4xl font-heading font-bold mb-12 pt-2">Hi, I'm Ray</h1>
-            <p className="text-xl font-sans text-primary-200 mb-1 font-semibold">I'm a Full Stack Developer </p>
-            <p className="text-xl font-sans text-primary-200 mb-20 font-semibold">based in Texas.</p>
+            <h1 className="text-5xl font-heading font-bold mb-12 pt-2">Hi, I'm Ray</h1>
+            <p className="text-2xl font-sans text-primary-200 mb-1 font-semibold">I'm a Full Stack Developer </p>
+            <p className="text-2xl font-sans text-primary-200 mb-20 font-semibold">based in Texas.</p>
           </div>
           {/* Right column */}
           <div className="flex flex-row justify-center items-center pl-20 pt-8">
@@ -19,15 +19,16 @@ const Home: React.FC = () => {
               alt="Profile Picture" 
               className="w-[250px] h-[250px] rounded-full object-cover"
             />
-            <div className="ml-5 mt-2">
+            <div className="ml-5">
               <IntroDisplay />
             </div>
           </div>
         </div>
       </header>
-      {/* ADD A LINE OR SOMETHING */}
       {/* Scrolling down */}
-      <main className="w-full px-20 pt-10 bg-gradient-to-b from-primary-800 to-primary-500">
+      <div className="border-b border-dashed border-primary-400"></div>
+      {/* Scrolling down */}
+      <main className="w-full px-20 pt-12 bg-gradient-to-b from-primary-800 to-primary-500">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           {/* Left column */}
           <div className="space-y-5">
