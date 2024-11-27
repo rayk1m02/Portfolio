@@ -1,5 +1,6 @@
 import React from 'react';
 import { Chrono } from "react-chrono";
+import './Experience.module.css'; 
 
 const Experience: React.FC = () => {
   const items = [
@@ -7,7 +8,7 @@ const Experience: React.FC = () => {
       title: "Graduated",
       cardTitle: "Wheaton College, IL",
       cardSubtitle: "August 2020 - May 2024",
-      cardDetailedText: "B.S. Computer Science, Ecnomomics (minor)",
+      cardDetailedText: "B.S. Computer Science, Ecnomomics",
       media: {
         type: "IMAGE",
         source: {
@@ -16,10 +17,10 @@ const Experience: React.FC = () => {
       }
     },
     {
-      title: "Software Developer Intern",
+      title: "Software Engineer Intern",
       cardTitle: "First Trust Portfolios",
       cardSubtitle: "May 2023 - July 2023",
-      cardDetailedText: "Industry: Finance \n Skills: Delphi, SQL, Version Control",
+      cardDetailedText: "Delphi, SQL, Version Control",
       media: {
         type: "IMAGE",
         source: {
@@ -31,7 +32,7 @@ const Experience: React.FC = () => {
       title: "Product Management Intern",
       cardTitle: "Equinix",
       cardSubtitle: "May 2022 - August 2022",
-      cardDetailedText: "Skills: UX/UI, Cross-collaboration, Agile method, Intern ambassador",
+      cardDetailedText: "UX/UI, Scrum, Intern ambassador",
       media: {
         type: "IMAGE",
         source: {
@@ -43,7 +44,7 @@ const Experience: React.FC = () => {
       title: "Project Coordinator",
       cardTitle: "Academic & Institutional Technology",
       cardSubtitle: "March 2022 - December 2022",
-      cardDetailedText: "Skills: Technical support, Asset/vendor management",
+      cardDetailedText: "Technical support, Asset management",
       media: {
         type: "IMAGE",
         source: {
@@ -59,13 +60,22 @@ const Experience: React.FC = () => {
         <Chrono 
           items={items}
           mode="VERTICAL_ALTERNATING"
-          cardHeight={200}
+          cardHeight={150}
           theme={{
-            primary: '#333',
-            secondary: '#fff',
-            cardBgColor: '#f5f5f5',
-            titleColor: '#333',
-            titleColorActive: '#000',
+            primary: '#94a3b8', // timeline color
+            secondary: 'rgba(255, 255, 255, 0.1)', // highlight for active title
+            cardBgColor: '#1e293b', // card background
+            titleColor: '#e2e8f0', // title color
+            titleColorActive: '#ffffff', // active title color
+            cardSubtitleColor: '#cbd5e1', // explicitly set subtitle/date color
+          }}                  
+          disableToolbar={true}
+          lineWidth={3}
+          fontSizes={{
+            cardSubtitle: '0.9rem',
+            cardText: '1rem',
+            cardTitle: '1.2rem',
+            title: '1.2rem',
           }}
         />
       </div>
