@@ -4,10 +4,22 @@ import { Chrono } from "react-chrono";
 const Experience: React.FC = () => {
   const items = [
     {
+      title: "Graduated",
+      cardTitle: "Wheaton College, IL",
+      cardSubtitle: "August 2020 - May 2024",
+      cardDetailedText: "B.S. Computer Science, Ecnomomics (minor)",
+      media: {
+        type: "IMAGE",
+        source: {
+          url: "/img/firsttrust-logo.jpg"
+        }
+      }
+    },
+    {
       title: "Software Developer Intern",
-      cardTitle: "First Trust",
+      cardTitle: "First Trust Portfolios",
       cardSubtitle: "May 2023 - July 2023",
-      cardDetailedText: "Skills: Delphi, SQL, Version Control",
+      cardDetailedText: "Industry: Finance \n Skills: Delphi, SQL, Version Control",
       media: {
         type: "IMAGE",
         source: {
