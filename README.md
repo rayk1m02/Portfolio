@@ -26,3 +26,4 @@ This is my portfolio webpage. A full-stack project built with React (TypeScript)
 - MongoDB integration for data persistence
 - CORS enabled for secure cross-origin requests
 - Development and production build configurations
+- Interactive vertical timeline with react-chrono
