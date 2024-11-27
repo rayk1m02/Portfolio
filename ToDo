@@ -1,2 +1,9 @@
-1. Have each section be a separate component. 
-2. Implement ripple effect
+Implement ripple effect
+
+Experience Tab
+Have a timeline
+- To include for each:
+  - Job title
+  - Company
+  - Skills
+  - Date
