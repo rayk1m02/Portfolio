@@ -1,12 +1,6 @@
 Implement ripple effect
 
-Experience Tab
-  Have a timeline
-  To include for each:
-  - Job title
-  - Company
-  - Skills
-  - Date
+Review Experience.module.css 
 
 Eventually going to have to upload the projet to host on web instead of local.
 Need to figure out how to connect to MongoDB and other server side logic on web and have it running
