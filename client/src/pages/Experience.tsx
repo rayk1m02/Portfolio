@@ -16,10 +16,10 @@ const Experience: React.FC = () => {
       }
     },
     {
-      title: "Software Developer Intern",
-      cardTitle: "First Trust",
-      cardSubtitle: "May 2023 - July 2023",
-      cardDetailedText: "Skills: Delphi, SQL, Version Control",
+      title: "Product Management Intern",
+      cardTitle: "Equinix",
+      cardSubtitle: "May 2022 - August 2022",
+      cardDetailedText: "Skills: UX/UI, Cross-collaboration, Agile method, Intern ambassador",
       media: {
         type: "IMAGE",
         source: {
@@ -28,10 +28,10 @@ const Experience: React.FC = () => {
       }
     },
     {
-      title: "Software Developer Intern",
-      cardTitle: "First Trust",
-      cardSubtitle: "May 2023 - July 2023",
-      cardDetailedText: "Skills: Delphi, SQL, Version Control",
+      title: "Project Coordinator",
+      cardTitle: "Academic & Institutional Technology",
+      cardSubtitle: "March 2022 - December 2022",
+      cardDetailedText: "Skills: Technical support, Asset/vendor management",
       media: {
         type: "IMAGE",
         source: {
