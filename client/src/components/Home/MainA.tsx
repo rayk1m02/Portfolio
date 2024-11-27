@@ -7,7 +7,7 @@ const MainA: React.FC = () => {
       <div className="p-7 bg-white rounded-lg shadow-lg">
         <h2 className="text-3xl font-heading font-bold mb-5">🌄 Background</h2>
         <p className="text-lg font-sans font-semibold text-primary-700 leading-relaxed mb-20">
-          I'm from Texas but grew up in Pakistan and Taiwan. I graduated in May 2024 studying Computer Science and Economics from Wheaton College in Illinois.
+          I was born in Texas and grew up in Pakistan and Taiwan. I graduated in May 2024 studying Computer Science and Economics from Wheaton College in Illinois.
         </p>
         <h2 className="text-3xl font-heading font-bold mb-5">🤓 Interests</h2>
         <p className="text-lg font-sans font-semibold text-primary-700 leading-relaxed">
