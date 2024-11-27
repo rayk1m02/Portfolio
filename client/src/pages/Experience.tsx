@@ -5,14 +5,14 @@ import './Experience.module.css';
 const Experience: React.FC = () => {
   const items = [
     {
-      title: "Graduated",
+      title: "New Graduate",
       cardTitle: "Wheaton College, IL",
       cardSubtitle: "August 2020 - May 2024",
       cardDetailedText: "B.S. Computer Science, Ecnomomics",
       media: {
         type: "IMAGE",
         source: {
-          url: "/img/firsttrust-logo.jpg"
+          url: "/img/Wheaton.JPG"
         }
       }
     },
@@ -24,7 +24,7 @@ const Experience: React.FC = () => {
       media: {
         type: "IMAGE",
         source: {
-          url: "/img/firsttrust-logo.jpg"
+          url: "/img/FirstTrust.JPG"
         }
       }
     },
@@ -36,7 +36,7 @@ const Experience: React.FC = () => {
       media: {
         type: "IMAGE",
         source: {
-          url: "/img/firsttrust-logo.jpg"
+          url: "/img/Equinix.JPG"
         }
       }
     },
@@ -48,7 +48,7 @@ const Experience: React.FC = () => {
       media: {
         type: "IMAGE",
         source: {
-          url: "/img/firsttrust-logo.jpg"
+          url: "/img/AIT.JPG"
         }
       }
     }
@@ -63,7 +63,7 @@ const Experience: React.FC = () => {
           cardHeight={150}
           theme={{
             primary: '#94a3b8', // timeline color
-            secondary: 'rgba(255, 255, 255, 0.1)', // highlight for active title
+            secondary: 'rgba(255, 255, 255, 0.1)', // date color
             cardBgColor: '#1e293b', // card background
             titleColor: '#e2e8f0', // title color
             titleColorActive: '#ffffff', // active title color
