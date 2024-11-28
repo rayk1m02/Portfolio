@@ -1,0 +1,17 @@
+.project-detail-modal {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.project-detail-modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.project-detail-modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.project-detail-modal::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
