@@ -5,6 +5,7 @@ export interface Project {
   date: string;
   category: 'development' | 'uxui' | 'other';
   details: string;
+  image?: string;
   technologies?: string[];
   links?: {
     live?: string;
@@ -16,37 +17,38 @@ export const projects: Project[] = [
   {
     id: '1',
     title: 'Web Portfolio',
-    description: 'Personal portfolio website',
-    date: 'June 2023',
+    description: 'Full Stack Webapp',
+    date: 'August 2024',
     category: 'development',
-    details: 'A responsive portfolio website built with modern web technologies. Features include dynamic content loading, dark mode, and interactive project showcases.',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
+    details: 'A full-stack project built with React (TypeScript) frontend and Express/MongoDB backend.',
+    image: '/images/projects/portfolio.png', 
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB'],
     links: {
-      github: 'https://github.com/yourusername/portfolio',
-      live: 'https://yourportfolio.com'
+      github: 'https://github.com/yourusername/portfolio'
     }
   },
   {
     id: '2',
-    title: 'E-commerce Platform',
-    description: 'Full-stack e-commerce solution',
-    date: 'April 2023',
+    title: 'NBA APP',
+    description: 'Realtime NBA iOS app',
+    date: 'April 2024',
     category: 'development',
-    details: 'A comprehensive e-commerce platform with user authentication, product management, shopping cart, and payment integration.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Stripe'],
+    details: 'Real time NBA data based on user selection of team. Integrated third party APIs and CocoaPods.',
+    image: '/images/projects/portfolio.png', 
+    technologies: ['Swift', 'Firebase', 'NBA-API', 'SwiftyJSON'],
     links: {
-      github: 'https://github.com/yourusername/ecommerce',
-      live: 'https://yourecommerce.com'
+      github: 'https://github.com/yourusername/ecommerce'
     }
   },
   {
     id: '3',
-    title: 'Task Management App',
-    description: 'Collaborative task tracker',
-    date: 'March 2023',
+    title: 'OmniFood',
+    description: 'Responsive Web Design',
+    date: 'May 2023',
     category: 'development',
-    details: 'A real-time task management application with team collaboration features, drag-and-drop interface, and progress tracking.',
-    technologies: ['React', 'Firebase', 'Material-UI', 'Redux'],
+    details: 'dynamic front-end website for Omnifood, an imaginary start-up focused on delivering healthy personalized meals to users.',
+    image: '/images/projects/portfolio.png', 
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Design Assets', 'Media Queries'],
     links: {
       github: 'https://github.com/yourusername/taskmanager'
     }
@@ -58,6 +60,7 @@ export const projects: Project[] = [
     date: 'May 2023',
     category: 'uxui',
     details: 'Comprehensive redesign of a travel booking application focusing on improving user journey and booking experience. Included user research, wireframing, and high-fidelity prototypes.',
+    image: '/images/projects/portfolio.png', 
     technologies: ['Figma', 'Adobe XD', 'Protopie'],
     links: {
       live: 'https://yourportfolio.com/travel-app-case-study'
@@ -70,6 +73,7 @@ export const projects: Project[] = [
     date: 'February 2023',
     category: 'uxui',
     details: 'Design of a modern finance dashboard focusing on data visualization and accessibility. Created user flows, interaction patterns, and responsive layouts.',
+    image: '/images/projects/portfolio.png', 
     technologies: ['Figma', 'Sketch', 'InVision'],
     links: {
       live: 'https://yourportfolio.com/finance-dashboard'
@@ -82,6 +86,7 @@ export const projects: Project[] = [
     date: 'January 2023',
     category: 'other',
     details: 'A curated collection of nature and wildlife photography, featuring work from national parks and wildlife sanctuaries.',
+    image: '/images/projects/portfolio.png', 
     technologies: ['Adobe Lightroom', 'Photoshop'],
     links: {
       live: 'https://yourphotos.com'
@@ -94,10 +99,10 @@ export const projects: Project[] = [
     date: 'May 2023',
     category: 'other',
     details: 'Created comprehensive documentation for an open-source project, including API references, tutorials, and best practices.',
+    image: '/images/projects/portfolio.png', 
     technologies: ['Markdown', 'GitBook', 'OpenAPI'],
     links: {
       github: 'https://github.com/yourusername/tech-docs'
     }
   }
 ];
-

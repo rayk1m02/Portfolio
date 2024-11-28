@@ -10,10 +10,19 @@ const Projects: React.FC = () => {
       className="bg-secondary-light bg-opacity-10 rounded-lg p-4 cursor-pointer
                  hover:bg-opacity-20 transition-all duration-300 border-l-4 border-blue-500"
     >
-      <h3 className="text-xl font-semibold">{project.title}</h3>
-      <p className="text-sm opacity-80">{project.date}</p>
-      <p className="mt-2">{project.description}</p>
+    {project.image && (
+      <div className="w-full h-48 mb-4 overflow-hidden rounded-lg">
+        <img 
+          src={project.image} 
+          alt={project.title}
+          className="w-full h-full object-cover"
+        />
     </div>
+    )}
+    <h3 className="text-xl font-semibold">{project.title}</h3>
+    <p className="text-sm opacity-80">{project.date}</p>
+    <p className="mt-2">{project.description}</p>
+  </div>
   );
 
   const ProjectDetail: React.FC<{ project: Project }> = ({ project }) => (
@@ -28,12 +37,12 @@ const Projects: React.FC = () => {
             ×
           </button>
         </div>
-        <p className="text-sm opacity-80 mt-1">{project.date}</p>
+        {/* <p className="text-sm opacity-80 mt-1">{project.date}</p> */}
         <div className="mt-4">
           <p>{project.details}</p>
           {project.technologies && (
             <div className="mt-4">
-              <h3 className="font-semibold">Technologies Used:</h3>
+              {/* <h3 className="font-semibold">Technologies Used:</h3> */}
               <div className="flex flex-wrap gap-2 mt-2">
                 {project.technologies.map(tech => (
                   <span key={tech} className="px-2 py-1 bg-blue-500 bg-opacity-20 rounded-md text-sm">
@@ -48,13 +57,13 @@ const Projects: React.FC = () => {
               {project.links.github && (
                 <a href={project.links.github} target="_blank" rel="noopener noreferrer"
                    className="text-blue-400 hover:text-blue-300">
-                  GitHub Repository
+                  GitHub Repo
                 </a>
               )}
               {project.links.live && (
                 <a href={project.links.live} target="_blank" rel="noopener noreferrer"
                    className="text-blue-400 hover:text-blue-300">
-                  Live Demo
+                  Something
                 </a>
               )}
             </div>
@@ -67,7 +76,6 @@ const Projects: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-secondary-dark to-primary-800 text-secondary-light pt-20">
       <div className="max-w-6xl mx-auto px-4">
-        
         {/* Development Section */}
         <section className="m-12">
           <h2 className="text-2xl font-semibold mb-4">Development</h2>
@@ -79,7 +87,6 @@ const Projects: React.FC = () => {
               ))}
           </div>
         </section>
-
         {/* UX/UI Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">UX/UI</h2>
@@ -91,7 +98,6 @@ const Projects: React.FC = () => {
               ))}
           </div>
         </section>
-
         {/* Other Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Other</h2>
@@ -103,7 +109,6 @@ const Projects: React.FC = () => {
               ))}
           </div>
         </section>
-
         {/* Project Detail Modal */}
         {selectedProject && <ProjectDetail project={selectedProject} />}
       </div>
