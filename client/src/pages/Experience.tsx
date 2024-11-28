@@ -63,20 +63,13 @@ const Experience: React.FC = () => {
           cardHeight={150}
           theme={{
             primary: '#94a3b8', // timeline color
-            secondary: 'rgba(255, 255, 255, 0.1)', // date color
+            secondary: 'rgba(255, 255, 255, 0.1)', // title background 
             cardBgColor: '#1e293b', // card background
             titleColor: '#e2e8f0', // title color
             titleColorActive: '#ffffff', // active title color
-            cardSubtitleColor: '#cbd5e1', // explicitly set subtitle/date color
           }}                  
           disableToolbar={true}
           lineWidth={3}
-          fontSizes={{
-            cardSubtitle: '0.9rem',
-            cardText: '1rem',
-            cardTitle: '1.2rem',
-            title: '1.2rem',
-          }}
         />
       </div>
     </div>

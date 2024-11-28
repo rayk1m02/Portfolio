@@ -1,3 +1,4 @@
+/* Main card container */
 :global(.timeline-card-content) {
   padding: 20px 24px !important;
   background: #1e293b !important;
@@ -5,69 +6,26 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
 }
 
-/* More specific selectors for date/subtitle */
-:global(.timeline-card-content .timeline-card-subtitle),
-:global(.timeline-card-content div[class*="subtitle"]),
-:global(.card-subtitle),
-:global(.timeline-subtitle) {
-  padding: 0 !important;
-  margin: 0 0 8px 0 !important;
-  color: #cbd5e1 !important;
-  font-size: 0.9rem !important;
-  font-weight: 400 !important;
-  letter-spacing: 0.5px !important;
-}
-
-:global(.timeline-card-title) {
-  color: #f8fafc !important;
-  font-size: 1.1rem !important;
-  font-weight: 600 !important;
-  margin-bottom: 4px !important;
-  letter-spacing: 0.3px !important;
-}
-
+/* card content paragraph elements */
 :global(.timeline-card-content p) {
-  color: #cbd5e1 !important;
-  font-size: 0.95rem !important;
+  color: #cbd5e1 !important; 
+  font-size: 0.9rem !important;
   line-height: 1.5 !important;
-  margin: 8px 0 0 0 !important;
 }
 
-/* Timeline point styling */
-:global(.timeline-vertical-circle) {
-  width: 16px !important;
-  height: 16px !important;
-  background: #94a3b8 !important;
-  border: none !important;
-  border-radius: 50% !important;
-  margin-left: -3px !important;
-}
-
-:global(.timeline-vertical-circle.active) {
-  background: #ffffff !important;
-  border: none !important;
-}
-
-/* Timeline line styling */
-:global(.timeline-vertical-line) {
-  background: #94a3b8 !important;
-  width: 2px !important;
-}
-
-/* Additional specific selectors for text colors */
-:global(.timeline-card-content *[class*="subtitle"]) {
-  color: #cbd5e1 !important;
-}
-
+/* card content div elements */
 :global(.timeline-card-content > div) {
   padding: 0 !important;
 }
 
-/* Override any potential theme colors */
-:global(.timeline-main-wrapper) {
-  --timeline-subtitle-color: #cbd5e1 !important;
+/* Timeline circle */
+:global(.timeline-vertical-circle) {
+  background: #94a3b8 !important;
+  border-radius: 50% !important;
 }
 
-:global(.card-description) {
-  margin-top: 8px !important;
+/* Date subtitle */
+:global(.timeline-card-content *[class*="subtitle"]) {
+  color: #d8e0eb !important;
+  padding-left: 12px;
 }
