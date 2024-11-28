@@ -1,6 +1,6 @@
 import React from 'react';
 import { Chrono } from "react-chrono";
-import './Experience.module.css'; 
+import '../components/Experience/Experience.css'; 
 import { items } from '../components/Experience/ExperienceData';
 
 const Experience: React.FC = () => {

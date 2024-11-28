@@ -1,5 +1,5 @@
 /* Main card container */
-:global(.timeline-card-content) {
+.timeline-card-content {
   padding: 20px 24px !important;
   background: #1e293b !important;
   border-radius: 8px !important;
@@ -7,25 +7,25 @@
 }
 
 /* card content paragraph elements */
-:global(.timeline-card-content p) {
+.timeline-card-content p {
   color: #cbd5e1 !important; 
   font-size: 0.9rem !important;
   line-height: 1.5 !important;
 }
 
 /* card content div elements */
-:global(.timeline-card-content > div) {
+.timeline-card-content > div {
   padding: 0 !important;
 }
 
 /* Timeline circle */
-:global(.timeline-vertical-circle) {
+.timeline-vertical-circle {
   background: #94a3b8 !important;
   border-radius: 50% !important;
 }
 
 /* Date subtitle */
-:global(.timeline-card-content *[class*="subtitle"]) {
+.timeline-card-content *[class*="subtitle"] {
   color: #d8e0eb !important;
   padding-left: 12px;
 }
