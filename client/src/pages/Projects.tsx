@@ -27,8 +27,8 @@ const Projects: React.FC = () => {
   );
 
   const ProjectDetail: React.FC<{ project: Project }> = ({ project }) => (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 overflow-y-auto">
-      <div className="bg-secondary-dark p-8 rounded-lg max-w-4xl w-full my-8 relative">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 z-50 overflow-y-auto">
+      <div className="bg-secondary-dark p-8 rounded-lg max-w-4xl w-full mt-20 mb-8 relative">
         {/* Close Button */}
           <button 
             onClick={() => setSelectedProject(null)}
@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
         <div className="mb-8">
           <h2 className="text-3xl font-bold mb-2">{project.title}</h2>
           <p className="text-lg opacity-80">{project.description}</p>
-              </div>
+        </div>
 
         {/* Main Image */}
         {project.image && (
@@ -49,10 +49,10 @@ const Projects: React.FC = () => {
             <img 
               src={project.image} 
               alt={project.title}
-              className="w-full h-auto object-cover"
+              className="w-50px h-50px object-cover"
             />
           </div>
-              )}
+        )}
 
         {/* Overview Section */}
         <div className="mb-8 bg-secondary-light bg-opacity-5 p-6 rounded-lg">
@@ -62,25 +62,28 @@ const Projects: React.FC = () => {
               <p className="text-sm opacity-70">Brief</p>
               <p className="mb-2">{project.overview.brief}</p>
             </div>
-            <div>
-              <p className="text-sm opacity-70">Role</p>
-              <p className="mb-2">{project.overview.role}</p>
-      </div>
+            {project.overview.role && (
+              <div>
+                <p className="text-sm opacity-70">Role</p>
+                <p className="mb-2">{project.overview.role}</p>
+              </div>
+            )}
             <div>
               <p className="text-sm opacity-70">Duration</p>
               <p className="mb-2">{project.overview.duration}</p>
-    </div>
+            </div>
             {project.overview.team && (
               <div>
                 <p className="text-sm opacity-70">Team</p>
                 <p>{project.overview.team}</p>
-          </div>
+              </div>
             )}
           </div>
-          </div>
+        </div>
+
         {/* Technologies Section */}
         <div className="mb-8">
-          <h3 className="text-xl font-semibold mb-4">Technologies Used</h3>
+          <h3 className="text-xl font-semibold mb-4">Technologies</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {project.technologies.frontend && (
               <div>
@@ -91,8 +94,8 @@ const Projects: React.FC = () => {
                       {tech}
                     </span>
               ))}
-          </div>
-      </div>
+                </div>
+              </div>
             )}
             {project.technologies.backend && (
               <div>
@@ -103,7 +106,7 @@ const Projects: React.FC = () => {
                       {tech}
                     </span>
                   ))}
-    </div>
+                </div>
               </div>
             )}
             {project.technologies.database && (
@@ -187,6 +190,7 @@ const Projects: React.FC = () => {
             </div>
           </div>
         )}
+
       </div>
     </div>
   );
