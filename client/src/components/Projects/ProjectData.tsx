@@ -51,7 +51,7 @@ export const projects: Project[] = [
     sections: [
       {
         title: 'Initial Mockup',
-        content: 'The project first started with handrawn wireframes, then protoypes on Miro to better understand general webpage structure and flow. As for the tech stack, I had already decided on using React, TypeScript, Node.js, and MongoDB as I wanted to familarize myself with them. Take a look at the mockups below.',
+        content: 'The project first started with handrawn wireframes, then protoypes on Miro to better understand general webpage structure and flow. As I progressed, I modified certain UI and layouts. As for the tech stack, I had already decided on using React, TypeScript, Node.js, and MongoDB as I wanted to familarize myself with them. Click the mockups below.',
         images: ['/img/Projects/WebPort/Mockup1.PNG', '/img/Projects/WebPort/Mockup2.PNG']
       },
       {

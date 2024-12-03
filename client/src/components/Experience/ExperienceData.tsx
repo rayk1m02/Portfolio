@@ -27,7 +27,7 @@ export const items = [
     title: "Product Management Intern",
     cardTitle: "Equinix",
     cardSubtitle: "May 2022 - August 2022",
-    cardDetailedText: "UX/UI, Scrum, Intern ambassador",
+    cardDetailedText: "UX/UI, Scrum, Intern Ambassador",
     media: {
       type: "IMAGE",
       source: {

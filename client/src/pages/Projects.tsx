@@ -10,6 +10,7 @@ const Projects: React.FC = () => {
     <div className="absolute inset-0 min-h-full">
       <div className="bg-gradient-to-b from-secondary-dark to-primary-800 text-secondary-light pt-20 min-h-full pb-20">
         <div className="max-w-6xl mx-auto px-4">
+
           {/* Development Section */}
           <section className="m-12">
             <h2 className="text-2xl font-semibold mb-4">Development</h2>
@@ -25,6 +26,7 @@ const Projects: React.FC = () => {
                 ))}
             </div>
           </section>
+
           {/* UX/UI Section */}
           <section className="mb-12">
             <h2 className="text-2xl font-semibold mb-4">UX/UI</h2>
@@ -40,6 +42,7 @@ const Projects: React.FC = () => {
                 ))}
             </div>
           </section>
+
           {/* Other Section */}
           <section className="mb-12">
             <h2 className="text-2xl font-semibold mb-4">Other</h2>
@@ -55,6 +58,7 @@ const Projects: React.FC = () => {
                 ))}
             </div>
           </section>
+
           {/* Project Detail Modal */}
           {selectedProject && (
             <ProjectDetail 
