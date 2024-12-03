@@ -16,7 +16,7 @@ const PdfViewer = () => {
       }}
     >
       <img
-        src="/img/CV.JPG"
+        src="/img/Home/CV.JPG"
         alt="CV"
         style={{
           position: 'absolute',

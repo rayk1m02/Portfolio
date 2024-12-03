@@ -7,7 +7,7 @@ export const items = [
     media: {
       type: "IMAGE",
       source: {
-        url: "/img/Wheaton.JPG"
+        url: "/img/Experience/Wheaton.JPG"
       }
     }
   },
@@ -19,7 +19,7 @@ export const items = [
     media: {
       type: "IMAGE",
       source: {
-        url: "/img/FirstTrust.JPG"
+        url: "/img/Experience/FirstTrust.JPG"
       }
     }
   },
@@ -31,7 +31,7 @@ export const items = [
     media: {
       type: "IMAGE",
       source: {
-        url: "/img/Equinix.JPG"
+        url: "/img/Experience/Equinix.JPG"
       }
     }
   },
@@ -43,7 +43,7 @@ export const items = [
     media: {
       type: "IMAGE",
       source: {
-        url: "/img/AIT.JPG"
+        url: "/img/Experience/AIT.JPG"
       }
     }
   }

@@ -37,7 +37,7 @@ export const projects: Project[] = [
     description: 'Full Stack Webapp',
     date: 'August 2024',
     category: 'development',
-    image: '/images/projects/portfolio.png',
+    image: '/img/Projects/WebPortfolio.JPG',
     overview: {
       brief: 'The main purpose behind this project was to not only build my personal portfolio but also to learn full stack development whlie building it.',
       duration: '2 months'
