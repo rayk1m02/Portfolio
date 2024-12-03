@@ -79,7 +79,7 @@ export const projects: Project[] = [
     description: 'Realtime NBA iOS app',
     date: 'April 2024',
     category: 'development',
-    image: '/images/projects/nba-app.png',
+    image: '/img/Projects//NBAPP/NBAPP.PNG',
     overview: {
       brief: 'iOS application providing real-time NBA statistics and game updates',
       duration: '3 months'

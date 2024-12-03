@@ -48,11 +48,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
                max-w-sm"
   >
     {project.image && (
-      <div className="w-full h-40 mb-2 overflow-hidden rounded-lg">
+      <div className="w-full h-32 mb-4 rounded-2xl overflow-hidden">
         <img 
           src={project.image} 
           alt={project.title}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain rounded-2xl" 
         />
       </div>
     )}
@@ -61,6 +61,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
     <p className="mt-2">{project.description}</p>
   </div>
 );
+
 
 interface ProjectDetailProps {
   project: Project;
@@ -98,11 +99,11 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
 
         {/* Main Project Image */}
         {project.image && (
-          <div className="mb-8 rounded-lg overflow-hidden flex justify-center items-center">
+          <div className="mb-8 overflow-hidden flex justify-center items-center">
             <img 
               src={project.image} 
               alt={project.title}
-              className="w-5px h-5px object-contained"
+              className="max-w-[200px] max-h-[200px] rounded-2xl w-full h-auto object-contain"
             />
           </div>
         )}
