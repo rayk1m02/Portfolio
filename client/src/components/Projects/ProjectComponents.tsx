@@ -48,7 +48,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
                max-w-sm"
   >
     {project.image && (
-      <div className="w-full h-40 mb-3 overflow-hidden rounded-lg">
+      <div className="w-full h-40 mb-2 overflow-hidden rounded-lg">
         <img 
           src={project.image} 
           alt={project.title}
@@ -57,7 +57,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
       </div>
     )}
     <h3 className="text-xl font-semibold">{project.title}</h3>
-    <p className="text-sm opacity-80">{project.date}</p>
+    <p className="text-sm opacity-80 mb-5">{project.date}</p>
     <p className="mt-2">{project.description}</p>
   </div>
 );
@@ -102,7 +102,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
             <img 
               src={project.image} 
               alt={project.title}
-              className="w-50px h-50px object-cover"
+              className="w-5px h-5px object-contained"
             />
           </div>
         )}
@@ -192,33 +192,47 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
             )}
           </div>
         </div>
-
+       
         {/* Project Details Sections */}
-        <div className="space-y-8">
+        <div className="space-y-12">
           {project.sections.map((section, index) => (
-            <div key={index} className="border-l-4 border-blue-500 pl-6">
-              <h3 className="text-xl font-semibold mb-4">{section.title}</h3>
+            <div 
+              key={index} 
+              className="bg-secondary-light bg-opacity-5 rounded-lg p-6 hover:bg-opacity-10 transition-all duration-300"
+            >
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-1.5 h-8 bg-blue-500 rounded-full"></div>
+                <h3 className="text-2xl font-bold tracking-tight">{section.title}</h3>
+              </div>
+              
               <div className="prose prose-invert max-w-none">
                 {section.content.split('\n').map((paragraph, i) => (
-                  <p key={i} className="text-white opacity-70 mb-4 whitespace-pre-line">{paragraph}</p>
+                  <p 
+                    key={i} 
+                    className="text-secondary-light text-lg leading-relaxed mb-4 whitespace-pre-line text-left"
+                  >
+                    {paragraph}
+                  </p>
                 ))}
               </div>
               {/* Section Images Gallery */}
               {section.images && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                  {section.images.map((image, i) => (
-                    <div 
-                      key={i} 
-                      className="rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
-                      onClick={() => setSelectedImage(image)}
-                    >
-                      <img 
-                        src={image} 
-                        alt={`${section.title} - ${i + 1}`}
-                        className="w-full h-auto object-cover"
-                      />
-                    </div>
-                  ))}
+                <div className="mt-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {section.images.map((image, i) => (
+                      <div 
+                        key={i} 
+                        className="overflow-hidden rounded-lg cursor-zoom-in"
+                        onClick={() => setSelectedImage(image)}
+                      >
+                        <img 
+                          src={image} 
+                          alt={`${section.title} - ${i + 1}`}
+                          className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>

@@ -51,7 +51,7 @@ export const projects: Project[] = [
     sections: [
       {
         title: 'Initial Mockup',
-        content: 'The project first started with handrawn wireframes, then protoypes on Miro to better understand general webpage structure and flow. As I progressed, I modified certain UI and layouts. As for the tech stack, I had already decided on using React, TypeScript, Node.js, and MongoDB as I wanted to familarize myself with them. Click the mockups below.',
+        content: 'The project first started with hand-drawn wireframes, then protoypes on Miro to better understand the general webpage structure and flow. As I progressed, I modified certain layouts. For example, in the Experience tab, I decided to have a vertical timeline instead of horizontal as it seemed more intuitive. As for the tech stack, I had already decided on using React, TypeScript, Node.js, and MongoDB as I wanted to familarize myself with them. Click the mockups below.',
         images: ['/img/Projects/WebPort/Mockup1.PNG', '/img/Projects/WebPort/Mockup2.PNG']
       },
       {
@@ -59,21 +59,18 @@ export const projects: Project[] = [
         content: `The application follows a typical client-server architecture:
         - Frontend React application communicates with Express backend
         - REST API endpoints handle data requests
-        - MongoDB stores dynamic content
-        - Authentication implemented using JWT tokens`,
-        images: ['/images/projects/portfolio/architecture.png']
+        - MongoDB stores resume data`
       },
       {
         title: 'Future Improvements',
-        content: `Planned enhancements include:
-        • Blog section with CMS integration
-        • Dark/Light theme toggle
-        • Multi-language support
-        • Advanced analytics integration`,
+        content: `
+        - Add to the Blog tab
+        - Add more resume data to MongoDB. Currently only have Intro data (email, linkedin, github) stored and pulled. This is because I wanted to learn the process of fetching and displaying the data before adding everything to the database.
+        `
       }
     ],
     links: {
-      github: 'https://github.com/yourusername/portfolio'
+      github: 'https://github.com/rayk1m02/Portfolio.git'
     }
   },
   {
