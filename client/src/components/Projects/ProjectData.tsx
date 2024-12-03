@@ -37,7 +37,7 @@ export const projects: Project[] = [
     description: 'Full Stack Webapp',
     date: 'December 2024',
     category: 'development',
-    image: '/img/Projects/WebPortfolio.PNG',
+    image: '/img/Projects/WebPort/WebPortfolio.PNG',
     overview: {
       brief: 'The main purpose of this project was to learn full stack development by building my personal portfolio webpage.',
       duration: '2 months'
@@ -51,8 +51,8 @@ export const projects: Project[] = [
     sections: [
       {
         title: 'Initial Mockup',
-        content: 'The planning phase involved creating wireframes and deciding on the technical stack. I chose React with TypeScript for type safety and better development experience. The design was prototyped in Figma before implementation.',
-        images: ['/images/projects/portfolio/wireframe1.png', '/images/projects/portfolio/wireframe2.png']
+        content: 'The project first started with handrawn wireframes, then protoypes on Miro to better understand general webpage structure and flow. As for the tech stack, I had already decided on using React, TypeScript, Node.js, and MongoDB as I wanted to familarize myself with them. Take a look at the mockups below.',
+        images: ['/img/Projects/WebPort/Mockup1.PNG', '/img/Projects/WebPort/Mockup2.PNG']
       },
       {
         title: 'Key Features',

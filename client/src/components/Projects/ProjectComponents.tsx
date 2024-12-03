@@ -150,7 +150,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
           )}
         </div>
       </div>
-      
+
       {/* Detailed Sections */}
       <div className="space-y-8">
         {project.sections.map((section, index) => (
