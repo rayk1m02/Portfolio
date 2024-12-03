@@ -81,6 +81,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
       }}
     >
       <div className="bg-secondary-dark p-8 rounded-lg max-w-4xl w-full mt-20 mb-8 relative">
+
         {/* Close Button */}
         <button 
           onClick={onClose}
@@ -94,6 +95,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
           <h2 className="text-3xl font-bold mb-2">{project.title}</h2>
           <p className="text-lg opacity-80">{project.description}</p>
         </div>
+
         {/* Main Project Image */}
         {project.image && (
           <div className="mb-8 rounded-lg overflow-hidden flex justify-center items-center">
@@ -259,6 +261,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
             onClose={() => setSelectedImage(null)}
           />
         )}
+        
       </div>
     </div>
   );
