@@ -81,40 +81,78 @@ export const projects: Project[] = [
     category: 'development',
     image: '/img/Projects//NBAPP/NBAPP.PNG',
     overview: {
-      brief: 'iOS application providing real-time NBA statistics and game updates',
+      brief: 'iOS NBA app that provides real-time NBA statistics and game updates based on user selection of team.',
       duration: '3 months'
     },
     technologies: {
-      frontend: ['Swift', 'UIKit', 'SwiftUI'],
-      backend: ['Firebase'],
-      tools: ['Xcode', 'CocoaPods', 'Postman']
+      frontend: ['Swift', 'UIKit', 'SwiftUI', 'KingFisher', 'CLTypingLabel'],
+      backend: ['API-NBA by Rapid API', 'SwiftyJSON'],
+      database: ['Firebase'],
+      tools: ['Xcode']
     },
     sections: [
       {
-        title: 'User requirements & System specifications',
-        content: 'Created an iOS application to provide basketball fans with real-time access to NBA games, statistics, and player information.',
-        images: ['/images/projects/nba-app/mockup1.png']
+        title: 'User & System Requirements',
+        content: `
+        User
+        - Register and Login
+        - Team selection
+        - View team logo, conference, and current roster (name, position, jersey number)
+        - View weekly games (past, current, upcoming)
+        - View score or time of game based on game date
+        - View all conference standings (rank, name, wins, loss, pct)
+        System
+        - Authenticate and store user data
+        - Retrieve live NBA data through API
+        - Retain selected team across tab views
+        - Display NBA data accordingly
+        `
       },
       {
-        title: 'User flow',
-        content: 'The design process focused on creating an intuitive interface that allows quick access to game information while maintaining visual hierarchy.',
-        images: ['/images/projects/nba-app/design1.png', '/images/projects/nba-app/design2.png']
-      },
-      {
-        title: 'Key features',
-        content: `Key technical aspects include:
-        • Integration with NBA API for real-time data
-        • Local data caching for offline access
-        • Push notifications for game updates
-        • Custom animations for smooth transitions`,
+        title: 'User Flow',
+        content: 'Sign in page -> Team tab -> Games tab -> Standings tab',
+        images: ['/img/Projects/NBAPP/Signin.PNG', '/img/Projects/NBAPP/Team.PNG', '/img/Projects/NBAPP/Games.PNG', '/img/Projects/NBAPP/Standings.PNG']
       },
       {
         title: 'Future Improvements',
-        content: 'Implemented comprehensive unit tests and UI tests. Performed extensive performance optimization to ensure smooth operation during live games.',
+        content: 'Deploy to App Store',
       }
     ],
     links: {
-      github: 'https://github.com/yourusername/nba-app'
+      github: 'https://github.com/rayk1m02/NBAPP.git'
     }
-  }
+  },
+  {
+    id: '3',
+    title: 'OmniFood',
+    description: 'Responsive Web Design',
+    date: 'May 2023', 
+    category: 'development',
+    image: '/img/Projects//Omnifood/Omnifood.PNG',
+    overview: {
+      brief: 'Dynamic front end website for Omnifood, an imaginary start-up focused on delivering healthy personalized meals.',
+      duration: '3 months'
+    },
+    technologies: {
+      frontend: ['HTML', 'CSS', 'JavaScript']
+    },
+    sections: [
+      {
+        title: 'Website at a glance',
+        content: 'Please access the website through the link at the bottom.',
+        images: ['/img/Projects//Omnifood/1.PNG', '/img/Projects//Omnifood/2.PNG', '/img/Projects//Omnifood/3.PNG']
+      },
+      {
+        title: 'Key Features',
+        content: `
+        - Media queries to take into consideration different device screen sizes
+        - Curated design assets for a professional appeal 
+        - Highly responsive user experience
+        `
+      }
+    ],
+    links: {
+      live: 'https://omnifood-raykim.netlify.app'
+    }
+  },
 ];

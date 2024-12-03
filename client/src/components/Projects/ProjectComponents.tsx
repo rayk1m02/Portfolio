@@ -113,22 +113,22 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
           <h3 className="text-xl font-semibold mb-4">Project Overview</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <p className="text-sm opacity-70">Brief</p>
+              <p className="text-sm opacity-70 mb-1">Brief</p>
               <p className="mb-2">{project.overview.brief}</p>
             </div>
             {project.overview.role && (
               <div>
-                <p className="text-sm opacity-70">Role</p>
+                <p className="text-sm opacity-70 mb-1">Role</p>
                 <p className="mb-2">{project.overview.role}</p>
               </div>
             )}
             <div>
-              <p className="text-sm opacity-70">Duration</p>
+              <p className="text-sm opacity-70 mb-1">Duration</p>
               <p className="mb-2">{project.overview.duration}</p>
             </div>
             {project.overview.team && (
               <div>
-                <p className="text-sm opacity-70">Team</p>
+                <p className="text-sm opacity-70 mb-1">Team</p>
                 <p>{project.overview.team}</p>
               </div>
             )}
@@ -261,7 +261,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-green-500 bg-opacity-20 hover:bg-opacity-30 rounded-md transition-all"
                 >
-                  View Live Demo
+                  View Live
                 </a>
               )}
             </div>
