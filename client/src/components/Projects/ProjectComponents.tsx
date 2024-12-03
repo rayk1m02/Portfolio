@@ -9,15 +9,16 @@ interface ProjectCardProps {
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) => (
   <div 
     onClick={() => onSelect(project)}
-    className="bg-secondary-light bg-opacity-10 rounded-lg p-4 cursor-pointer
-               hover:bg-opacity-20 transition-all duration-300 border-l-4 border-blue-500"
+    className="bg-secondary-light bg-opacity-10 rounded-lg p-3 cursor-pointer
+               hover:bg-opacity-20 transition-all duration-300 border-l-4 border-blue-500
+               max-w-sm" // Added max-width
   >
     {project.image && (
-      <div className="w-full h-48 mb-4 overflow-hidden rounded-lg">
+      <div className="w-full h-40 mb-3 overflow-hidden rounded-lg">
         <img 
           src={project.image} 
           alt={project.title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
       </div>
     )}
@@ -33,7 +34,15 @@ interface ProjectDetailProps {
 }
 
 export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }) => (
-  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 z-50 overflow-y-auto">
+  <div 
+    className="fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 z-50 overflow-y-auto"
+    onClick={(e) => {
+      // Close if clicking the overlay
+      if (e.target === e.currentTarget) {
+        onClose();
+      }
+    }}
+  >
     <div className="bg-secondary-dark p-8 rounded-lg max-w-4xl w-full mt-20 mb-8 relative">
       {/* Close Button */}
       <button 
@@ -51,7 +60,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
 
       {/* Main Image */}
       {project.image && (
-        <div className="mb-8 rounded-lg overflow-hidden">
+        <div className="mb-8 rounded-lg overflow-hidden flex justify-center items-center">
           <img 
             src={project.image} 
             alt={project.title}
@@ -60,7 +69,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
         </div>
       )}
 
-      {/* Overview Section */}
+      {/* Project Overview Section */}
       <div className="mb-8 bg-secondary-light bg-opacity-5 p-6 rounded-lg">
         <h3 className="text-xl font-semibold mb-4">Project Overview</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -87,14 +96,14 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
         </div>
       </div>
 
-      {/* Technologies Section */}
+      {/* Technologies Used Section */}
       <div className="mb-8">
-        <h3 className="text-xl font-semibold mb-4">Technologies</h3>
+        <h3 className="text-xl font-semibold mb-4 text-center">Technologies</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {project.technologies.frontend && (
-            <div>
+            <div className="flex flex-col items-center">
               <h4 className="text-sm font-semibold mb-2 text-blue-400">Frontend</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap justify-center gap-2">
                 {project.technologies.frontend.map(tech => (
                   <span key={tech} className="px-2 py-1 bg-blue-500 bg-opacity-20 rounded-md text-sm">
                     {tech}
@@ -104,9 +113,9 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
             </div>
           )}
           {project.technologies.backend && (
-            <div>
+            <div className="flex flex-col items-center">
               <h4 className="text-sm font-semibold mb-2 text-green-400">Backend</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap justify-center gap-2">
                 {project.technologies.backend.map(tech => (
                   <span key={tech} className="px-2 py-1 bg-green-500 bg-opacity-20 rounded-md text-sm">
                     {tech}
@@ -116,9 +125,9 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
             </div>
           )}
           {project.technologies.database && (
-            <div>
+            <div className="flex flex-col items-center">
               <h4 className="text-sm font-semibold mb-2 text-purple-400">Database</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap justify-center gap-2">
                 {project.technologies.database.map(tech => (
                   <span key={tech} className="px-2 py-1 bg-purple-500 bg-opacity-20 rounded-md text-sm">
                     {tech}
@@ -128,9 +137,9 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
             </div>
           )}
           {project.technologies.tools && (
-            <div>
+            <div className="flex flex-col items-center">
               <h4 className="text-sm font-semibold mb-2 text-yellow-400">Tools</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap justify-center gap-2">
                 {project.technologies.tools.map(tech => (
                   <span key={tech} className="px-2 py-1 bg-yellow-500 bg-opacity-20 rounded-md text-sm">
                     {tech}
@@ -141,7 +150,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
           )}
         </div>
       </div>
-
+      
       {/* Detailed Sections */}
       <div className="space-y-8">
         {project.sections.map((section, index) => (
@@ -149,7 +158,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
             <h3 className="text-xl font-semibold mb-4">{section.title}</h3>
             <div className="prose prose-invert max-w-none">
               {section.content.split('\n').map((paragraph, i) => (
-                <p key={i} className="mb-4 whitespace-pre-line">{paragraph}</p>
+                <p key={i} className="text-white opacity-70 mb-4 whitespace-pre-line">{paragraph}</p>
               ))}
             </div>
             {section.images && (

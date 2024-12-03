@@ -35,18 +35,18 @@ export const projects: Project[] = [
     id: '1',
     title: 'Web Portfolio',
     description: 'Full Stack Webapp',
-    date: 'August 2024',
+    date: 'December 2024',
     category: 'development',
-    image: '/img/Projects/WebPortfolio.JPG',
+    image: '/img/Projects/WebPortfolio.PNG',
     overview: {
-      brief: 'The main purpose behind this project was to not only build my personal portfolio but also to learn full stack development whlie building it.',
+      brief: 'The main purpose of this project was to learn full stack development by building my personal portfolio webpage.',
       duration: '2 months'
     },
     technologies: {
-      frontend: ['React', 'TypeScript', 'Tailwind CSS'],
+      frontend: ['React', 'TypeScript', 'Tailwind CSS', 'Axios'],
       backend: ['Node.js', 'Express'],
       database: ['MongoDB'],
-      tools: ['Git', 'VS Code', 'Figma']
+      tools: ['Git', 'VS Code', 'Miro', 'PearAI']
     },
     sections: [
       {

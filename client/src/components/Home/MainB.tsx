@@ -11,7 +11,7 @@ const MainB: React.FC = () => {
           <div key={i} className="p-1 mr-4 last:mr-0">
             <div className="relative w-[190px] h-[190px] rounded-md overflow-hidden">
               <img
-                src={`/img/Art-${i}.JPG`}
+                src={`/img/Home/Art-${i}.JPG`}
                 alt={`Artwork ${i}`}
                 className="object-cover w-full h-full transition duration-500 ease-in-out hover:scale-110"
               />
