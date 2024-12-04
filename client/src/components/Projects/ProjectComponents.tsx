@@ -62,7 +62,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
   </div>
 );
 
-
 interface ProjectDetailProps {
   project: Project;
   onClose: () => void;
@@ -205,7 +204,6 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
                 <div className="w-1.5 h-8 bg-blue-500 rounded-full"></div>
                 <h3 className="text-2xl font-bold tracking-tight">{section.title}</h3>
               </div>
-              
               <div className="prose prose-invert max-w-none">
                 {section.content.split('\n').map((paragraph, i) => (
                   <p 
@@ -219,17 +217,41 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
               {/* Section Images Gallery */}
               {section.images && (
                 <div className="mt-8">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {section.images.map((image, i) => (
                       <div 
                         key={i} 
-                        className="overflow-hidden rounded-lg cursor-zoom-in"
+                        className="group relative rounded-xl overflow-hidden cursor-zoom-in 
+                                  bg-secondary-light/5 aspect-video hover:shadow-lg
+                                  transition-all duration-300 ease-in-out"
                         onClick={() => setSelectedImage(image)}
                       >
+                        {/* Overlay with zoom icon */}
+                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+                          <svg 
+                            className="w-8 h-8 text-white"
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                          >
+                            <path 
+                              strokeLinecap="round" 
+                              strokeLinejoin="round" 
+                              strokeWidth={2} 
+                              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"
+                            />
+                          </svg>
+                        </div>
+                        {/* Image with loading state */}
                         <img 
                           src={image} 
-                          alt={`${section.title} - ${i + 1}`}
-                          className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-300"
+                          alt={`${section.title} - Image ${i + 1}`}
+                          className="w-full h-full object-cover group-hover:scale-105
+                                    transition-transform duration-500 ease-out"
+                          loading="lazy"
+                          onError={(e) => {
+                            e.currentTarget.src = '/fallback-image.jpg'; // Add a fallback image
+                          }}
                         />
                       </div>
                     ))}

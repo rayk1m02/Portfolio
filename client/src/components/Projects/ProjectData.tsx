@@ -110,7 +110,7 @@ export const projects: Project[] = [
       },
       {
         title: 'User Flow',
-        content: 'Sign in page -> Team tab -> Games tab -> Standings tab',
+        content: 'Sign in page | Team tab | Games tab | Standings tab',
         images: ['/img/Projects/NBAPP/Signin.PNG', '/img/Projects/NBAPP/Team.PNG', '/img/Projects/NBAPP/Games.PNG', '/img/Projects/NBAPP/Standings.PNG']
       },
       {
