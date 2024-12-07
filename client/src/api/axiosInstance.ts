@@ -1,5 +1,11 @@
 import axios from 'axios';
 
-const axiosInstance = axios.create({ baseURL: 'http://localhost:5001/api', });
+const baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
 
-export default axiosInstance;
+const instance = axios.create({
+  baseURL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+export default instance;

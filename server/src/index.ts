@@ -10,7 +10,11 @@ const app = express();
 const port = 5001; // port 5000 taken by ControlCe (Apple)
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: [
+    'https://raymondkim.netlify.app',
+    'http://localhost:3000'  // for local development
+  ],
+  credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
