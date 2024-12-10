@@ -33,12 +33,12 @@ const IntroDisplay: React.FC = () => {
       <div className="space-y-4">
         <div className="flex items-center text-accent-blue font-semibold">
           <span className="mr-2">📧</span>
-          <span className="text-primary-200">{introData.email || "hkapray@gmail.com"}</span>
+          <span className="text-primary-200">{introData?.email || "hkapray@gmail.com"}</span>
         </div>
         <div className="flex items-center font-semibold">
           <span className="mr-2">🧳</span>
           <a 
-            href={introData.linkedIn || "https://www.linkedin.com/in/raykim02"}
+            href={introData?.linkedIn || "https://www.linkedin.com/in/raykim02"}
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary-200 hover:text-primary-50 transition-colors duration-200"
@@ -49,7 +49,7 @@ const IntroDisplay: React.FC = () => {
         <div className="flex items-center font-semibold">
           <span className="mr-2">🤖</span>
           <a 
-            href={introData.github || "https://github.com/rayk1m02"}
+            href={introData?.github || "https://github.com/rayk1m02"}
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary-200 hover:text-primary-50 transition-colors duration-200"
