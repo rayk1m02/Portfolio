@@ -14,7 +14,7 @@ This is my portfolio webpage. A full-stack project built with React (TypeScript)
   - MongoDB with Mongoose
   - TypeScript
 
-## Data Flow
+## Data Flow (run locally)
 1. MongoDB → Stores resume and other data in collection
 2. Express server → Retrieves data from MongoDB
 3. Axios → Fetches data from the server
