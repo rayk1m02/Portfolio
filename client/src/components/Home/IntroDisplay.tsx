@@ -33,7 +33,7 @@ const IntroDisplay: React.FC = () => {
       <div className="space-y-4">
         <div className="flex items-center text-accent-blue font-semibold">
           <span className="mr-2">📧</span>
-          <span className="text-primary-200">{introData.email}</span>
+          <span className="text-primary-200">{introData.email || "hkapray@gmail.com"}</span>
         </div>
         <div className="flex items-center font-semibold">
           <span className="mr-2">🧳</span>
