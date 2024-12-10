@@ -20,13 +20,13 @@ const IntroDisplay: React.FC = () => {
     fetchData();
   }, []);
 
-  if (!introData) {
-    return (
-      <div className="flex justify-center items-center min-h-[200px]">
-        <div className="text-accent-blue text-xs text-center">Loading...</div>
-      </div>
-    );
-  }
+  // if (!introData) {
+  //   return (
+  //     <div className="flex justify-center items-center min-h-[200px]">
+  //       <div className="text-accent-blue text-xs text-center">Loading...</div>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className="max-w-[335px] mx-auto p-5 rounded-lg text-sm text-center">      
@@ -38,7 +38,7 @@ const IntroDisplay: React.FC = () => {
         <div className="flex items-center font-semibold">
           <span className="mr-2">🧳</span>
           <a 
-            href={introData.linkedIn}
+            href={introData.linkedIn || "https://www.linkedin.com/in/raykim02"}
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary-200 hover:text-primary-50 transition-colors duration-200"
@@ -49,7 +49,7 @@ const IntroDisplay: React.FC = () => {
         <div className="flex items-center font-semibold">
           <span className="mr-2">🤖</span>
           <a 
-            href={introData.github}
+            href={introData.github || "https://github.com/rayk1m02"}
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary-200 hover:text-primary-50 transition-colors duration-200"
