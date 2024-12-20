@@ -1,0 +1,5 @@
+/*    /index.html   200
+
+# /* - wildcard that matches all paths
+# /index.html - all paths redirect to this file
+# 200 - redirect should return a status code of 200 (OK)
