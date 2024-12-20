@@ -40,7 +40,7 @@ export const projects: Project[] = [
     image: '/img/Projects/WebPort/WebPortfolio.PNG',
     overview: {
       brief: 'The main purpose of this project was to learn full stack development by building my personal portfolio webpage.',
-      duration: '2 months'
+      duration: '3 months'
     },
     technologies: {
       frontend: ['React', 'TypeScript', 'Tailwind CSS', 'Axios'],
