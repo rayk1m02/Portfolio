@@ -3,7 +3,7 @@ export const items = [
     title: "New Graduate",
     cardTitle: "Wheaton College, IL",
     cardSubtitle: "August 2020 - May 2024",
-    cardDetailedText: "B.S. Computer Science, Ecnomomics",
+    cardDetailedText: "B.S. Computer Science, Economics",
     media: {
       type: "IMAGE",
       source: {
