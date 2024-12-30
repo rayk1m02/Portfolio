@@ -9,8 +9,8 @@ import PdfViewer from './components/Home/PdfViewer';
 function App() {
   return (
     <Router>
-    <div className="text-center">
-      <NavBar />
+      <div className="text-center">
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/experience" element={<Experience />} />
@@ -18,7 +18,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/cv" element={<PdfViewer />} />
         </Routes>
-    </div>
+      </div>
     </Router>
   );
 }

@@ -24,4 +24,3 @@ const MainB: React.FC = () => {
 };
 
 export default MainB;
-

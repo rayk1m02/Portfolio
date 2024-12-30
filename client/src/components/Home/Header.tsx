@@ -10,7 +10,6 @@ const Header = () => {
           <h1 className="text-5xl font-heading font-bold mb-12 pt-2">Hi, I'm Ray</h1>
           <p className="text-2xl font-sans text-primary-200 mb-1 font-semibold">I'm a Full Stack Developer </p>
           <p className="text-2xl font-sans text-primary-200 mb-20 font-semibold">based in Texas.</p>
-          {/* <p className="text-xl font-sans italic font-light text-primary-600 pt-5">Thanks for visiting my portfolio!</p> */}
         </div>
         {/* Right column */}
         <div className="flex flex-row justify-center items-center pl-20 pt-8">
