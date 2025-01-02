@@ -11,7 +11,7 @@ const MainA: React.FC = () => {
         </p>
         <h2 className="text-3xl font-heading font-bold mb-5">🤓 Interests</h2>
         <p className="text-lg font-sans font-semibold text-primary-700 leading-relaxed">
-          My main interests are in front-end development and I am always looking for new technologies to learn. Currently, I am learning full stack development and UX/UI design.
+          I am always looking for new technologies to learn. Currently, I am interested in full stack development and UX/UI design.
         </p>
       </div>
       {/* Right column */}
