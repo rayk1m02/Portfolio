@@ -7,8 +7,8 @@ const Header = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-2 md:pt-20">
         {/* Left column */}
         <div className="mt-[100px]">
-          <h1 className="text-5xl font-heading font-bold mb-12 pt-2">Hi, I'm Ray</h1>
-          <p className="text-2xl font-sans text-primary-200 mb-1 font-semibold">I'm a Full Stack Developer </p>
+          <h1 className="text-5xl font-heading font-bold mb-14 pt-2">Hi, I'm Ray</h1>
+          <p className="text-2xl font-sans text-primary-200 mb-2 font-semibold">I'm a Full Stack Developer </p>
           <p className="text-2xl font-sans text-primary-200 mb-20 font-semibold">based in Texas.</p>
         </div>
         {/* Right column */}
