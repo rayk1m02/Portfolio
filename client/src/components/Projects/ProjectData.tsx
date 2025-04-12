@@ -40,7 +40,7 @@ export const projects: Project[] = [
     image: '/img/Projects/WebPort/WebPortfolio.PNG',
     overview: {
       brief: 'The main purpose of this project was to learn full stack development by building my personal portfolio webpage.',
-      duration: '3 months'
+      duration: '2 months'
     },
     technologies: {
       frontend: ['React', 'TypeScript', 'Tailwind CSS', 'Axios'],
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     image: '/img/Projects//NBAPP/NBAPP.PNG',
     overview: {
       brief: 'iOS NBA app that provides real-time NBA statistics and game updates based on user selection of team.',
-      duration: '3 months'
+      duration: '2 months'
     },
     technologies: {
       frontend: ['Swift', 'UIKit', 'SwiftUI', 'KingFisher', 'CLTypingLabel'],
@@ -131,7 +131,7 @@ export const projects: Project[] = [
     image: '/img/Projects//Omnifood/Omnifood.PNG',
     overview: {
       brief: 'Dynamic front end website for Omnifood, an imaginary start-up focused on delivering healthy personalized meals.',
-      duration: '3 months'
+      duration: '2 months'
     },
     technologies: {
       frontend: ['HTML', 'CSS', 'JavaScript']
