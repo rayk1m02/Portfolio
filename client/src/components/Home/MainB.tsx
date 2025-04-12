@@ -5,7 +5,7 @@ const MainB: React.FC = () => {
 
   return (
     <section className="text-center py-20 px-4">
-      <h2 className="text-3xl font-heading font-semibold">In my free time I enjoy drawing</h2>
+      <h2 className="text-3xl font-heading font-semibold">In my free time I enjoy drawing!</h2>
       <div className="w-full flex flex-row flex-nowrap justify-center px-4 py-10">
         {artworks.map((i) => (
           <div key={i} className="p-1 mr-4 last:mr-0">

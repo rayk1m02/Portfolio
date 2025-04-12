@@ -8,8 +8,8 @@ const Header = () => {
         {/* Left column */}
         <div className="mt-[100px]">
           <h1 className="text-5xl font-heading font-bold mb-14 pt-4">Hi, I'm Ray</h1>
-          <p className="text-2xl font-sans text-primary-200 mb-2 font-semibold">I'm a Full Stack Developer </p>
-          <p className="text-2xl font-sans text-primary-200 mb-20 font-semibold">based in Texas.</p>
+          <p className="text-2xl font-sans text-primary-200 mb-2 font-semibold">I'm a Database Administrator </p>
+          <p className="text-2xl font-sans text-primary-200 mb-20 font-semibold">based in Austin, Texas.</p>
         </div>
         {/* Right column */}
         <div className="flex flex-row justify-center items-center pl-20 pt-8">
