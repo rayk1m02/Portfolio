@@ -1,5 +1,17 @@
 export const items = [
   {
+    title: "Database Administrator",
+    cardTitle: "Rocky Mountain Crude Oil",
+    cardSubtitle: "March 2025 - Present",
+    cardDetailedText: "SQL, SSRS, TMW",
+    media: {
+      type: "IMAGE",
+      source: {
+        url: "/img/Experience/RMCO.JPG"
+      }
+    }
+  },
+  {
     title: "New Graduate",
     cardTitle: "Wheaton College, IL",
     cardSubtitle: "August 2020 - May 2024",
